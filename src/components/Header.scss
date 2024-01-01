@@ -7,9 +7,8 @@
   align-items: center;
   height:10rem;
   justify-content: space-around;
-  @include tablet {
-    background-color: red;
-  }
+  background-color: $White;
+
 
 
 }
@@ -40,7 +39,7 @@
   width: 12rem;
   border: 1px solid $Mercury;
   &::placeholder {
-        color: pink;
+        color: black;
   }
 
 }
@@ -57,9 +56,12 @@
   align-items: center;
   gap: 4.5rem;
   width: 90vw;
-  height: 3rem;
+  height:40px;
   color: $White;
   border: none;
   border-radius: 5px;
   margin-top: 1rem;
+  &:hover {
+    background-color: $BrainFlix-DarkBlue;
+}
 }
