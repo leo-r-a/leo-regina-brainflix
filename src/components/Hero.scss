@@ -1,3 +1,50 @@
+@import "../styles/partials/variables";
+@import "../styles/partials/mixins";
+.hero {
+    background-color: $White;
+}
 .hero__video {
-    width: 100vw;
+    width: 100%;
+}
+.main__header {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    &--title {
+       color: $BrainFlix-Black;
+       text-align: left;
+       font-size: x-large;
+       border-bottom: 2px solid $Mercury;
+       padding-bottom: 2rem;
+    }
+}
+.main__info {
+    width: 95vw;
+    &--one {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    &--two {
+        display: flex;
+        justify-content: space-around;
+        color: $Silver;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $Mercury;
+    }
+    &--views {
+        color: $Silver;
+    }
+    &--channel {
+        font-size: 16px;
+    }  
+    &--video-description {
+        padding-top: 1rem;
+        text-align: left;
+        padding-bottom: 1rem;
+
+    } 
 }

@@ -1,3 +1,5 @@
+import "./Nextvids.scss";
+
 function Nextvids({ videos, selectedVideo, setSelectedVideo }) {
   const filterVideos = videos.filter((video) => video.id !== selectedVideo.id);
 
@@ -7,13 +9,19 @@ function Nextvids({ videos, selectedVideo, setSelectedVideo }) {
 
   return (
     <div className="video-container">
-      <h2 className="video-header">NEXT VIDEOS</h2>
-      <div className="video-list">
+      <h2 className="video-container__header">NEXT VIDEOS</h2>
+      <div className="video-container__list">
         {filterVideos.map((video) => (
-          <div className="" key={video.id} onClick={() => videoSelector(video)}>
-            <img src={video.image} />
-            <h2>{video.title}</h2>
-            <p>{video.channel}</p>
+          <div
+            className="video-container__video"
+            key={video.id}
+            onClick={() => videoSelector(video)}
+          >
+            <img className="video-container__image" src={video.image} />
+            <div className="video-container__details">
+              <h2 className="video-container__title">{video.title}</h2>
+              <p className="video-container__channel">{video.channel}</p>
+            </div>
           </div>
         ))}
       </div>
