@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Comments from './components/Comments';
+import Nextvids from './components/Nextvids';
 import videos from './Data/videos.json';
 import { useState } from 'react';
 import videodetails from "./Data/video-details.json";
@@ -24,6 +25,11 @@ function App() {
       />
       <Comments
       selectedVideoDetails = {selectedVideoDetails} />
+      <Nextvids 
+      videos = {videos}
+      selectedVideo = {selectedVideo}
+      setSelectedVideo = {setSelectedVideo}
+      />
     </div>
   );
 }
