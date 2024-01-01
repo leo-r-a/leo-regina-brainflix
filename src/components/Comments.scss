@@ -1,0 +1,91 @@
+.comments {
+    background-color: $White;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      @include tablet {
+        justify-content: center;
+        padding-inline: 10rem;
+      }
+      @include desktop {
+        padding-inline: 20rem;
+      }
+    }
+    &__header-container {
+      font-size: 1.5rem;
+    }
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $Mercury;
+      @include tablet {
+        justify-content: center;
+      }
+      &--image {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 30px;
+        margin-right: 0.5rem;
+        margin-top: 0.9rem;
+      }
+    }
+    &__form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      width: 23rem;
+    }
+    &__form-info {
+      display: flex;
+      flex-direction: column;
+      &--label {
+        color: $Silver;
+      }
+    }
+    &__form-submit {
+      background-color: $BrainFlix-Black;
+      border-style: none;
+      color: $white;
+      height: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  #name {
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: $Alabaster;
+  }
+  #comment {
+    border-radius: 5px;
+    background-color: $Alabaster;
+  }
+  .comments__container-default {
+    border-bottom: 1px solid $Mercury;
+  }
+  .comments__container-default-top {
+    display: flex;
+    justify-content: space-between;
+    &--name {
+      color: $BrainFlix-Black;
+      font-size: 1.2rem;
+    }
+    &--date {
+      color: $Silver;
+      font-size: 0.8rem;
+    }
+    &--image {
+      height: 3rem;
+      width: 3rem;
+      background-color: $Mercury;
+      border-radius: 25px;
+      float: left;
+      margin-bottom: 3rem;
+    }
+  }
+  
