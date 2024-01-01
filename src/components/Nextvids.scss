@@ -10,6 +10,7 @@
     width: 95vw;
     justify-content: space-around;
     background-color: $White;
+    
     &__header {
         color: $Silver;
         text-align: left;
@@ -20,6 +21,10 @@
     }
     &__list {
         width: 95vw;
+        @include tablet {
+            width: 42vw;
+        }
+     
 
     }
 }
@@ -28,14 +33,15 @@
     max-height: 80px;
     padding-bottom: 1rem;
 
-    
-
 }
 .video-container__image {
     width: 40vw;
     border-radius: 11%;
     object-fit: cover;
     margin-left: 1rem;
+    @include tablet {
+        max-width: 8rem;
+    }
 }
 .video-container__details {
     font-size: 10px;
