@@ -27,15 +27,17 @@ export default function Hero({ selectedVideoDetails }) {
             <h2 className="main__info--channel">
               By {selectedVideoDetails.channel}
             </h2>
+            <p className="main__info--date">{parsedDate}</p>
 
-            <p className="main__info--views">
+        
+          </div>
+          <div className="main__info--two">
+          <p className="main__info--views">
               {" "}
               <img className="main__info--views-image" src={eyeball} />
               {selectedVideoDetails.views}
             </p>
-          </div>
-          <div className="main__info--two">
-            <p className="main__info--date">{parsedDate}</p>
+          
 
             <p className="main__info--likes">
               {" "}

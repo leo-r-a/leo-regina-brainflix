@@ -10,30 +10,59 @@
     display: flex;
     flex-direction: column;
     width: 95vw;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    @include tablet {
+        text-align: center;
+    }
     &--title {
        color: $BrainFlix-Black;
        text-align: left;
        font-size: x-large;
        border-bottom: 2px solid $Mercury;
        padding-bottom: 2rem;
+       @include tablet {
+        border-bottom: none;
+        padding-bottom: 0;
+       }
+
+    
     }
 }
 .main__info {
     width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $Mercury;
+    @include tablet {
+        margin-top: 1rem;
+    }
+
     &--one {
         display: flex;
-        justify-content: space-around;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        @include tablet {
+            flex-direction: row;
+            gap: 1.5rem;
+
+        }
     }
     &--two {
         display: flex;
-        justify-content: space-around;
+        padding-top: 0.5rem;
         color: $Silver;
         padding-bottom: 1rem;
-        border-bottom: 2px solid $Mercury;
+        align-items: flex-start;
+        flex-direction: column;
+        gap:0.5rem;
+        @include tablet {
+            flex-direction: row;
+            gap: 1.5rem;
+        }
     }
     &--views {
         color: $Silver;

@@ -107,12 +107,21 @@
     color: $Silver;
     font-size: 14px;
     text-align: left;
+    @include tablet {
+        width: 50vw;
+    }
   }
   &--mohan {
     height: 15vw;
     width: 15vw;
     border-radius: 50%;
     margin-top: 1rem;
+    @include tablet {
+        width:8vw;
+        height: 8vw;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
   }
   &--form {
     height: 8rem;
@@ -120,6 +129,10 @@
     border-style: solid;
     border-radius: 8%;
     width: 75vw;
+    @include tablet {
+        width: 60vw;
+        height:2rem;
+    }
   }
   &--button {
     background-color: $BrainFlix-Blue;
@@ -136,6 +149,19 @@
     margin-bottom: 1rem;
     &:hover {
         background-color: $BrainFlix-DarkBlue;
+    }
+    @include tablet {
+        width: 20vw;
+        gap: 3vw;
+        margin-top: 0;
+        margin-left: 3vw;
+    }
+  }
+  &--side {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3vw;
     }
   }
 }
