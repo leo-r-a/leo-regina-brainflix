@@ -1,0 +1,187 @@
+@import "../styles/partials/variables";
+@import "../styles/partials/mixins";
+
+.comments {
+  background-color: $White;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  @include desktop {
+    width:55vw;
+    padding-left: 6.8vw;
+    margin: 0;
+}
+  &__title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__header-container {
+    font-size: 1.5rem;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $Mercury;
+  
+
+    &--image {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 30px;
+      margin-right: 0.5rem;
+      margin-top: 0.9rem;
+    }
+  }
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 23rem;
+  }
+  &__form-info {
+    display: flex;
+    flex-direction: column;
+    &--label {
+      color: $Silver;
+    }
+  }
+  &__form-submit {
+    background-color: $BrainFlix-Black;
+    border-style: none;
+    color: $White;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+}
+
+#name {
+  height: 2.5rem;
+  border-radius: 5px;
+  background-color: $Alabaster;
+}
+#comment {
+  border-radius: 5px;
+  background-color: $Alabaster;
+}
+.comments__container-default {
+  border-bottom: 1px solid $Mercury;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.comments__container-default-top {
+  display: flex;
+  justify-content: space-between;
+  &--name {
+    color: $BrainFlix-Black;
+    font-size: 1rem;
+  }
+  &--date {
+    color: $Silver;
+    font-size: 0.8rem;
+  }
+  &--image {
+    height: 3rem;
+    width: 3rem;
+    background-color: $Mercury;
+    border-radius: 25px;
+    float: left;
+    margin-bottom: 3rem;
+  }
+  @include desktop {
+    padding-right: 1rem;
+  }
+}
+.comments__container-default-bottom {
+    font-size: 14px;
+    text-align: left;
+    padding-top: 0.5rem;
+
+}
+.comments__container-default-top--image{
+    margin-right: 0.5rem;
+}
+.comments__entry {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+    border-bottom: 2px solid $Mercury;
+  &--top {
+    color: $Silver;
+    font-size: 14px;
+    text-align: left;
+    @include tablet {
+        width: 50vw;
+    }
+    @include desktop {
+        width: 30vw;
+    }
+  }
+  &--mohan {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    margin-top: 1rem;
+    @include tablet {
+        width:8vw;
+        height: 8vw;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+  }
+  &--form {
+    height: 8rem;
+    border-color: $Mercury;
+    border-style: solid;
+    border-radius: 8%;
+    width: 75vw;
+    @include tablet {
+        width: 60vw;
+        height:2rem;
+    }
+    @include desktop {
+        width: 33vw;
+
+    }
+  }
+  &--button {
+    background-color: $BrainFlix-Blue;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 4.5rem;
+    width: 77vw;
+    height: 40px;
+    color: $White;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    &:hover {
+        background-color: $BrainFlix-DarkBlue;
+    }
+    @include tablet {
+        width: 20vw;
+        gap: 3vw;
+        margin-top: 0;
+        margin-left: 3vw;
+    }
+    @include desktop {
+        width: 10vw;
+        gap: 1vw;
+    }
+  }
+  &--side {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3vw;
+    }
+  }
+}

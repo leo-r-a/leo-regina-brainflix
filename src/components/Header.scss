@@ -1,0 +1,137 @@
+@import "../styles/partials/variables";
+@import "../styles/partials/mixins";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10rem;
+  justify-content: space-around;
+  background-color: $White;
+  padding-bottom: 1rem;
+
+  @include tablet {
+    flex-direction: row;
+    height: 6rem;
+  }
+}
+.header-logo {
+  @include tablet{
+    height: 2rem;
+    width: 15rem;
+  }
+}
+.header-functions {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  align-items: center;
+ 
+  @include tablet {
+    flex-direction: row;
+    position: relative;
+    justify-content: left;
+    padding: 0;
+    width: 65vw;
+  }
+  @include desktop {
+    margin-left: 30vw;
+  }
+}
+.header-functions--mohan {
+  width: 15vw;
+  max-width: 3rem;
+  border-radius: 50%;
+  height: 15vw;
+  max-height: 3rem;
+
+  @include tablet {
+    height: 8vw;
+    width: 8vw;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+  }
+}
+.header-functions--search {
+  max-width: 40rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding-inline: 5vw;
+  width: 90vw;
+  align-items: center;
+  flex-wrap: wrap;
+  @include tablet {
+    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  @include desktop {
+    width: 50vw;
+  }
+}
+.header-functions--input {
+  padding-left: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  width: 50vw;
+  border: 1px solid $Mercury;
+  &::placeholder {
+    color: black;
+  }
+  @include tablet {
+    width: 14rem;
+    height:3rem;
+
+  }
+}
+.header-functions--mag {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding-inline: 4vw;
+  @include tablet {
+    padding-bottom: 1rem;
+    position:absolute;
+    left: -1.5rem;
+    top: 1.7rem;
+  }
+  @include desktop {
+    left:-3rem;
+    top: 1.8rem;
+  }
+}
+.header-functions--button-container {
+  width: 90vw;
+  @include tablet {
+    width: 30vw;
+  }
+}
+.header-functions--button {
+  background-color: $BrainFlix-Blue;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 4.5rem;
+  width: 90vw;
+  height: 40px;
+  color: $White;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  max-width: 20rem;
+  &:hover {
+    background-color: $BrainFlix-DarkBlue;
+  }
+  @include tablet {
+    width: 20vw;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    gap: 4vw;
+    
+   
+  }
+}
