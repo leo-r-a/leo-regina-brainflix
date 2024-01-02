@@ -5,6 +5,11 @@
   background-color: $White;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  @include desktop {
+    width:55vw;
+    padding-left: 6.8vw;
+    margin: 0;
+}
   &__title {
     text-align: left;
     font-size: 16px;
@@ -21,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $Mercury;
+  
 
     &--image {
       width: 3rem;
@@ -88,6 +94,9 @@
     float: left;
     margin-bottom: 3rem;
   }
+  @include desktop {
+    padding-right: 1rem;
+  }
 }
 .comments__container-default-bottom {
     font-size: 14px;
@@ -109,6 +118,9 @@
     text-align: left;
     @include tablet {
         width: 50vw;
+    }
+    @include desktop {
+        width: 30vw;
     }
   }
   &--mohan {
@@ -133,6 +145,10 @@
         width: 60vw;
         height:2rem;
     }
+    @include desktop {
+        width: 33vw;
+
+    }
   }
   &--button {
     background-color: $BrainFlix-Blue;
@@ -155,6 +171,10 @@
         gap: 3vw;
         margin-top: 0;
         margin-left: 3vw;
+    }
+    @include desktop {
+        width: 10vw;
+        gap: 1vw;
     }
   }
   &--side {

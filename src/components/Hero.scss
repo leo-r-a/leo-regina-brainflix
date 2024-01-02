@@ -5,6 +5,12 @@
 }
 .hero__video {
     width: 100%;
+    @include desktop {
+        width: 80vw;
+        padding-inline: 10vw;
+        background-color: $BrainFlix-DarkBlack;
+        height: 36rem;
+}
 }
 .main__header {
     display: flex;
@@ -14,6 +20,11 @@
     padding-right: 2.5vw;
     @include tablet {
         text-align: center;
+    }
+    @include desktop {
+        width:55vw;
+        padding-left: 6.8vw;
+        padding-right: 0vw;
     }
     &--title {
        color: $BrainFlix-Black;
@@ -36,6 +47,12 @@
     border-bottom: 2px solid $Mercury;
     @include tablet {
         margin-top: 1rem;
+    }
+    @include desktop {
+        width:55vw;
+    }
+    &--date {
+        color: $Silver
     }
 
     &--one {
@@ -63,6 +80,9 @@
             flex-direction: row;
             gap: 1.5rem;
         }
+        @include desktop {
+            padding-right: 1rem;
+        }
     }
     &--views {
         color: $Silver;
@@ -74,6 +94,9 @@
         padding-top: 1rem;
         text-align: left;
         padding-bottom: 1rem;
+        @include desktop {
+            width:55vw;
+        }
 
     } 
 }
