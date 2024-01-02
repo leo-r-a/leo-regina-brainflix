@@ -10,6 +10,13 @@
     width: 95vw;
     justify-content: space-around;
     background-color: $White;
+    @include desktop {
+        width: 38vw;
+        position: absolute;
+        right: 0;
+        top: 43rem;
+        border-left: 2px solid $Mercury;
+    }
     
     &__header {
         color: $Silver;
