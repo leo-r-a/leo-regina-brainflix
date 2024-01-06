@@ -1,5 +1,5 @@
-@import "../styles/partials/variables";
-@import "../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
 
 .header {
   display: flex;
@@ -95,7 +95,7 @@
   @include tablet {
     padding-bottom: 1rem;
     position:absolute;
-    left: -1.5rem;
+    left: -0.5rem;
     top: 1.7rem;
   }
   @include desktop {
