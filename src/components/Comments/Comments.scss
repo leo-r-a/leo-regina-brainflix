@@ -1,5 +1,5 @@
-@import "../styles/partials/variables";
-@import "../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
 
 .comments {
   background-color: $White;
@@ -61,15 +61,7 @@
   }
 }
 
-#name {
-  height: 2.5rem;
-  border-radius: 5px;
-  background-color: $Alabaster;
-}
-#comment {
-  border-radius: 5px;
-  background-color: $Alabaster;
-}
+
 .comments__container-default {
   border-bottom: 1px solid $Mercury;
   padding-bottom: 1rem;
@@ -139,7 +131,7 @@
     height: 8rem;
     border-color: $Mercury;
     border-style: solid;
-    border-radius: 8%;
+    border-radius: 4px;
     width: 75vw;
     @include tablet {
         width: 60vw;

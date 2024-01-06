@@ -1,6 +1,6 @@
 import "./Comments.scss";
-import mohan from "../assets/Images/Mohan-muruge.jpg";
-import commentIcon from "../assets/Icons/add_comment.svg";
+import mohan from "../../assets/Images/Mohan-muruge.jpg";
+import commentIcon from "../../assets/Icons/add_comment.svg";
 
 const Comments = ({ selectedVideoDetails }) => {
   function commentsDate(commentTimestamp) {
@@ -17,7 +17,7 @@ const Comments = ({ selectedVideoDetails }) => {
       <h2 className="comments__title">3 Comments</h2>
       <div className="comments__entry">
         <div className="comments__entry--div-for-mohan">
-        <img className="comments__entry--mohan" src={mohan} />
+        <img className="comments__entry--mohan" src={mohan} alt="photo of man in profile with purple background"/>
         </div>
        
         <div className="comments__entry--side">
@@ -27,7 +27,7 @@ const Comments = ({ selectedVideoDetails }) => {
             placeholder="Add a new comment"
           />
           <button className="comments__entry--button">
-            <img src={commentIcon} /> COMMENT
+            <img src={commentIcon} alt="small speech bubble with a blue plus sign on a white background "/> COMMENT
           </button>
         </div>
       </div>

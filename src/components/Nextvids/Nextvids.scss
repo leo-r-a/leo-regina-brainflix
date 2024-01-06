@@ -1,5 +1,5 @@
-@import "../styles/partials/variables";
-@import "../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
 
 * {
     padding: 0;
@@ -43,7 +43,7 @@
 }
 .video-container__image {
     width: 40vw;
-    border-radius: 11%;
+    border-radius: 4px;
     object-fit: cover;
     margin-left: 1rem;
     @include tablet {

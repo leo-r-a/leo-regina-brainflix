@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Comments from './components/Comments';
-import Nextvids from './components/Nextvids';
+import './App.scss';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Comments from './components/Comments/Comments';
+import Nextvids from './components/Nextvids/Nextvids';
 import videos from './Data/videos.json';
 import { useState } from 'react';
 import videodetails from "./Data/video-details.json";
