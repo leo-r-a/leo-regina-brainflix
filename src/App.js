@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Comments from './components/Comments/Comments';
