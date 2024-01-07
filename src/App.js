@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Upload from './pages/Upload/Upload';
+import VideoPlayer from './pages/VideoPlayer/VideoPlayer'
 
 
 
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/upload' element={<Upload/>} />
-        {/* <Route path='/:id' element={} /> */}
+        <Route path='/:videoid' element={<VideoPlayer/>} />
       </Routes>
       </BrowserRouter>
     
