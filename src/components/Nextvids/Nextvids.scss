@@ -2,68 +2,68 @@
 @import "../../styles/partials/mixins";
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .video-container {
-    width: 95vw;
-    justify-content: space-around;
-    background-color: $White;
-    @include desktop {
-        width: 38vw;
-        position: absolute;
-        right: 0;
-        top: 43rem;
-        border-left: 2px solid $Mercury;
-    }
-    
-    &__header {
-        color: $Silver;
-        text-align: left;
-        padding-left: 1rem;
-        font-size: 16px;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-    &__list {
-        width: 95vw;
-        @include tablet {
-            width: 42vw;
-        }
-        @include desktop {
-            width: 35vw;
-        }
-     
+  width: 95vw;
+  justify-content: space-around;
+  background-color: $White;
+  @include desktop {
+    width: 38vw;
+    position: absolute;
+    right: 0;
+    top: 43rem;
+    border-left: 2px solid $Mercury;
+  }
 
-    }
-}
-.video-container__video{
-    display: flex;
-    max-height: 80px;
+  &__header {
+    color: $Silver;
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 16px;
     padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  &__list {
+    width: 95vw;
+    @include tablet {
+      width: 42vw;
+    }
+    @include desktop {
+      width: 35vw;
+    }
+  }
+}
+.video-container__video {
+  text-decoration: none;
+  color: $BrainFlix-Black;
 
+  display: flex;
+  max-height: 80px;
+  padding-bottom: 1rem;
 }
 .video-container__image {
-    width: 40vw;
-    border-radius: 4px;
-    object-fit: cover;
-    margin-left: 1rem;
-    @include tablet {
-        max-width: 8rem;
-    }
+  width: 40vw;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-left: 1rem;
+  @include tablet {
+    max-width: 8rem;
+  }
 }
 .video-container__details {
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 1rem;   
-    justify-content: space-around;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 1rem;
+  justify-content: space-around;
 }
 .video-container__title {
-    font-size: 12px;
+  font-size: 12px;
 }
 .video-container__channel {
-    font-size: 12px;
+  font-size: 12px;
 }

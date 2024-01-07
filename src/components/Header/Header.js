@@ -22,7 +22,7 @@ function Header() {
           <img className="header-functions--mohan" src={mohan} alt="photo of man in profile with purple background"></img>
 
           <div className="header-functions--button-container">
-            <Link to='/upload'>
+            <Link className="header-functions--button-link"  to='/upload'>
             <button className="header-functions--button">
               <img src={upload} alt="small white arrow pointing up with a white underline"/> UPLOAD
             </button>
