@@ -19,7 +19,6 @@ function VideoPlayer() {
         .then((response) => {
           const videoInfo = response.data;
           setSelectedVideoDetails(videoInfo);
-          
         })
         .catch((error) => {
           console.log("error", error);
