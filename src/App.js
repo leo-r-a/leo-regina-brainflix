@@ -7,6 +7,7 @@ import Nextvids from './components/Nextvids/Nextvids';
 import videos from './Data/videos.json';
 import { useState } from 'react';
 import videodetails from "./Data/video-details.json";
+import Upload from './components/Upload/Upload';
 
 
 
@@ -30,6 +31,7 @@ function App() {
       selectedVideo = {selectedVideo}
       setSelectedVideo = {setSelectedVideo}
       />
+      <Upload />
     </div>
   );
 }
