@@ -1,4 +1,3 @@
-import Header from "../../components/Header/Header";
 import "./Upload.scss";
 import thumbnail from "../../assets/Images/Upload-video-preview.jpg";
 import publish from "../../assets/Icons/publish.svg";
