@@ -8,20 +8,20 @@ function Nextvids({ selectedVideo }) {
 
     useEffect(() => {
       const api_key = "3a9c8666-484e-4ce1-b353-874b94446ddd";
-      async function videoList(apiKey) {
+      async function videoList(apiKey, video_id) {
         await axios
           .get(`https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`)
           .then((response) => {
             const videos = response.data;
-            const filterVideos = videos.filter((video) => video.id !== selectedVideo.id);
+            const filterVideos = videos.filter((video) => video.id !== video_id);
             setVideoList(filterVideos)
           })
           .catch((error) => {
             console.log("error", error);
           });
       }
-      videoList(api_key);
-    }, []);
+      videoList(api_key, selectedVideo.id);
+    }, [selectedVideo.id]);
 
 
     if (!videoList) {
