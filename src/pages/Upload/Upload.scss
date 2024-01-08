@@ -1,0 +1,170 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.upload-container {
+  margin-top: 1rem;
+  border-top: 2px solid $Mercury;
+  &__header {
+    padding-top: 1rem;
+    padding-right: 7.8rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+    @include tablet {
+      font-size: 48px;
+      padding-right: 24rem;
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+      border-bottom: 2px solid $Mercury;
+      padding-left: 3.5rem;
+    }
+    @include desktop {
+      padding-right: 40rem;
+      padding-left: 9rem;
+    }
+  }
+}
+.upload-container__image {
+  padding-left: 1rem;
+  @include tablet {
+    padding-left: 3.5rem;
+  }
+  @include desktop {
+    width: 40vw;
+    padding-left: 10vw;
+  }
+  &--text {
+    padding-right: 9.5rem;
+    font-size: 12px;
+    color: $Silver;
+    padding-bottom: 0.5rem;
+    @include tablet {
+      padding-top: 3rem;
+      padding-right: 30.5rem;
+      font-size: 18px;
+    }
+    @include desktop {
+      padding-right: 25rem;
+    }
+  }
+  &--thumbnail {
+    width: 85vw;
+    border-radius: 4px;
+    padding-bottom: 0.5rem;
+    @include tablet {
+      width: 45vw;
+      padding-right: 20rem;
+    }
+    @include desktop {
+      width: 30vw;
+      padding-right: 10rem;
+    }
+  }
+}
+.upload-container__entry-container {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  align-content: center;
+  padding-inline: 7.5vw;
+  @include tablet {
+    padding-bottom: 3rem;
+  }
+  @include desktop {
+    width: 55vw;
+    position: absolute;
+    padding-right: 3rem;
+    right: 0;
+    top: 22rem;
+  }
+  &--title {
+    text-align: left;
+    font-size: 10px;
+    color: $Silver;
+    padding-bottom: 0.5rem;
+  }
+  &--title-text {
+    border-radius: 4px;
+    border: 2px solid $Mercury;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;
+  }
+  &--description {
+    text-align: left;
+    font-size: 10px;
+    color: $Silver;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    @include desktop {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &--description-text {
+    border-radius: 4px;
+    border: 2px solid $Mercury;
+    padding-bottom: 3rem;
+    padding-left: 0.7rem;
+    @include desktop {
+      padding-bottom: 7rem;
+    }
+  }
+}
+.upload-container__button-container {
+  width: 85vw;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $Mercury;
+  }
+  @include desktop {
+    width: 40vw;
+  }
+
+  &--button {
+    background-color: $BrainFlix-Blue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 4.5rem;
+    height: 40px;
+    width: 85vw;
+
+    color: $White;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    max-width: 20rem;
+    font-weight: 600;
+    &:hover {
+      background-color: $BrainFlix-DarkBlue;
+    }
+    @include tablet {
+      position: absolute;
+      right: 0;
+      width: 20vw;
+      margin-right: 3rem;
+      gap: 2rem;
+    }
+    @include desktop {
+      width: 10vw;
+    }
+  }
+  &--button-cancel {
+    color: $BrainFlix-Blue;
+    font-weight: 600;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    @include tablet {
+      margin-left: 12rem;
+      margin-top: 1.5rem;
+    }
+    @include desktop {
+      margin-right: -16rem;
+    }
+  }
+}

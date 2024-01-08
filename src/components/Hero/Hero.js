@@ -1,8 +1,6 @@
-import videos from "../Data/videos.json";
 import "./Hero.scss";
-import eyeball from "../assets/Icons/views.svg";
-import heart from "../assets/Icons/likes.svg";
-import videodetails from "../Data/video-details.json";
+import eyeball from "../../assets/Icons/views.svg";
+import heart from "../../assets/Icons/likes.svg";
 
 export default function Hero({ selectedVideoDetails }) {
   const date = new Date(selectedVideoDetails.timestamp);
@@ -12,7 +10,7 @@ export default function Hero({ selectedVideoDetails }) {
   const parsedDate = month + "/" + day + "/" + year;
 
   return (
-    <div className="hero">
+    <section className="hero">
       <video
         className="hero__video"
         controls
@@ -34,14 +32,14 @@ export default function Hero({ selectedVideoDetails }) {
           <div className="main__info--two">
           <p className="main__info--views">
               {" "}
-              <img className="main__info--views-image" src={eyeball} />
+              <img className="main__info--views-image" src={eyeball} alt=" grey oval shaped eyeball" />
               {selectedVideoDetails.views}
             </p>
           
 
             <p className="main__info--likes">
               {" "}
-              <img className="main__info--likes-image" src={heart} />
+              <img className="main__info--likes-image" src={heart} alt="grey heart shape" />
               {selectedVideoDetails.likes}
             </p>
           </div>
@@ -50,6 +48,6 @@ export default function Hero({ selectedVideoDetails }) {
           {selectedVideoDetails.description}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

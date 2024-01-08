@@ -1,6 +1,6 @@
 import "./Comments.scss";
-import mohan from "../assets/Images/Mohan-muruge.jpg";
-import commentIcon from "../assets/Icons/add_comment.svg";
+import mohan from "../../assets/Images/Mohan-muruge.jpg";
+import commentIcon from "../../assets/Icons/add_comment.svg";
 
 const Comments = ({ selectedVideoDetails }) => {
   function commentsDate(commentTimestamp) {
@@ -17,7 +17,7 @@ const Comments = ({ selectedVideoDetails }) => {
       <h2 className="comments__title">3 Comments</h2>
       <div className="comments__entry">
         <div className="comments__entry--div-for-mohan">
-        <img className="comments__entry--mohan" src={mohan} />
+        <img className="comments__entry--mohan" src={mohan} alt="photo of man in profile with purple background"/>
         </div>
        
         <div className="comments__entry--side">
@@ -27,26 +27,26 @@ const Comments = ({ selectedVideoDetails }) => {
             placeholder="Add a new comment"
           />
           <button className="comments__entry--button">
-            <img src={commentIcon} /> COMMENT
+            <img src={commentIcon} alt="small speech bubble with a blue plus sign on a white background "/> COMMENT
           </button>
         </div>
       </div>
       <div className="comments__container">
         {selectedVideoDetails.comments.map((comment) => (
-          <div key={comment.id} class="comments__container-default">
-            <div class="comments__container-image">
-              <div class="comments__container-default-top--image"></div>
+          <div key={comment.id} className="comments__container-default">
+            <div className="comments__container-image">
+              <div className="comments__container-default-top--image"></div>
             </div>
-            <div class="comments__container-default-top">
-              <h2 class="comments__container-default-top--name">
+            <div className="comments__container-default-top">
+              <h2 className="comments__container-default-top--name">
                 {comment.name}
               </h2>
-              <h3 class="comments__container-default-top--date">
+              <h3 className="comments__container-default-top--date">
                 {commentsDate(comment.timestamp)}
               </h3>
             </div>
-            <div class="comments__container-default-bottom">
-              <p class="comments__container-default-bottom--text">
+            <div className="comments__container-default-bottom">
+              <p className="comments__container-default-bottom--text">
                 {comment.comment}
               </p>
             </div>
