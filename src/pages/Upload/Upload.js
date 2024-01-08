@@ -1,8 +1,16 @@
 import "./Upload.scss";
 import thumbnail from "../../assets/Images/Upload-video-preview.jpg";
 import publish from "../../assets/Icons/publish.svg";
+import { useNavigate } from "react-router-dom";
 
 const Upload = () => {
+    let nav = useNavigate();
+    function handleClick() {
+      alert("Upload sucessful");
+      nav ('/');
+    }
+  
+
   return (
     <section className="upload-container">
       <h2 className="upload-container__header">Upload Video</h2>
@@ -30,7 +38,7 @@ const Upload = () => {
           placeholder="Add a description to your video"
         ></input>
            <div className="upload-container__button-container">
-            <button className="upload-container__button-container--button">
+            <button className="upload-container__button-container--button" onClick={handleClick} >
               <img src={publish} alt="small white arrow pointing up with a white underline"/> PUBLISH
             </button>
           <a className="upload-container__button-container--button-cancel">CANCEL</a>
